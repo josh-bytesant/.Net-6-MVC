@@ -23,6 +23,7 @@ var meterProvider = Sdk.CreateMeterProviderBuilder()
     .Build();
 //builder.Services.AddSingleton(meterProvider);
 builder.Services.AddControllersWithViews();
+builder.Services.ConfigureServices(builder.Configuration);
 
 //builder.Services.ConfigureAddServicesExtension();
 
